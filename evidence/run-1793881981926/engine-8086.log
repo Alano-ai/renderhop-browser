@@ -1,0 +1,8 @@
+Gtk-Message: 20:33:02.384: Failed to load module "appmenu-gtk-module"
+[55116:1105/203302.512706:ERROR:ui/ozone/platform/wayland/host/wayland_wp_color_manager.cc:277] Unable to set image transfer function.
+[55116:1105/203302.512726:ERROR:ui/ozone/platform/wayland/host/wayland_wp_color_manager.cc:195] Failed to populate image description for color space {primaries:BT709, transfer:SRGB, matrix:RGB, range:FULL}
+[55116:1105/203304.084766:ERROR:ui/ozone/platform/wayland/host/wayland_wp_color_manager.cc:277] Unable to set image transfer function.
+[55116:1105/203304.084774:ERROR:ui/ozone/platform/wayland/host/wayland_wp_color_manager.cc:195] Failed to populate image description for color space {primaries:BT709, transfer:SRGB, matrix:RGB, range:FULL}
+[55116:1105/203306.070101:ERROR:ui/ozone/platform/wayland/host/wayland_wp_color_manager.cc:277] Unable to set image transfer function.
+[55116:1105/203306.070114:ERROR:ui/ozone/platform/wayland/host/wayland_wp_color_manager.cc:195] Failed to populate image description for color space {primaries:BT709, transfer:SRGB, matrix:RGB, range:FULL}
+[55116:1105/203307.608368:ERROR:content/browser/browser_main_loop.cc:276] GLib: g_main_context_pop_thread_default: assertion 'stack != NULL' failed

@@ -1,0 +1,8 @@
+Gtk-Message: 20:17:46.439: Failed to load module "appmenu-gtk-module"
+[35577:1105/201747.072684:ERROR:ui/ozone/platform/wayland/gpu/wayland_surface_factory.cc:249] '--ozone-platform=wayland' is not compatible with Vulkan. Consider switching to '--ozone-platform=x11' or disabling Vulkan
+[35577:1105/201747.257562:ERROR:gpu/command_buffer/service/shared_image/shared_image_representation.cc:429] Unable to initialize SkSurface
+[35577:1105/201747.257766:ERROR:components/viz/service/gl/exit_code.cc:13] Restarting GPU process due to unrecoverable error. Context was lost.
+[35584:1105/201747.268434:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:285] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[35584:1105/201747.268432:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:285] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[35532:1105/201747.358600:ERROR:content/browser/gpu/gpu_process_host.cc:1108] GPU process exited unexpectedly: exit_code=8704
+[35532:1105/201747.402923:ERROR:content/browser/browser_main_loop.cc:276] GLib: g_main_context_pop_thread_default: assertion 'stack != NULL' failed

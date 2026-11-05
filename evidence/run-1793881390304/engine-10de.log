@@ -1,0 +1,33 @@
+Gtk-Message: 20:23:24.234: Failed to load module "appmenu-gtk-module"
+[43703:1105/202324.950971:ERROR:ui/gl/gl_surface_egl.cc:380] No suitable EGL configs found for initialization.
+[43703:1105/202324.955056:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 1
+[43703:1105/202324.983242:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x1d140019fc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[43711:1105/202325.069156:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.
+[43703:1105/202326.634179:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 2
+[43703:1105/202326.636435:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 3
+[43703:1105/202326.724488:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x1d1400193c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[43703:1105/202326.756156:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x1d14001a7c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[43703:1105/202326.758212:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x1d1400193c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[43657:1105/202332.493521:ERROR:content/browser/browser_main_loop.cc:276] GLib: g_main_context_pop_thread_default: assertion 'stack != NULL' failed
+Gtk-Message: 20:23:41.623: Failed to load module "appmenu-gtk-module"
+[44259:1105/202342.340363:ERROR:ui/gl/gl_surface_egl.cc:380] No suitable EGL configs found for initialization.
+[44259:1105/202342.351243:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 1
+[44259:1105/202342.374823:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x3d040019fc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[44266:1105/202342.463751:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.
+[44259:1105/202344.034319:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 2
+[44259:1105/202344.036788:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 3
+[44259:1105/202344.125041:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x3d0400193c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[44259:1105/202344.160420:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x3d040019fc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[44259:1105/202344.162485:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x3d0400193c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[44211:1105/202349.549442:ERROR:content/browser/browser_main_loop.cc:276] GLib: g_main_context_pop_thread_default: assertion 'stack != NULL' failed
+Gtk-Message: 20:23:58.455: Failed to load module "appmenu-gtk-module"
+[44756:1105/202359.078765:ERROR:ui/gl/gl_surface_egl.cc:380] No suitable EGL configs found for initialization.
+[44756:1105/202359.086591:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 1
+[44756:1105/202359.112280:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x39740019fc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[44773:1105/202359.216884:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.
+[44756:1105/202400.771493:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 2
+[44756:1105/202400.773859:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 3
+[44756:1105/202400.884806:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x397400193c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[44756:1105/202400.887108:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x39740019fc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[44756:1105/202400.894102:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x397400193c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[44655:1105/202406.338656:ERROR:content/browser/browser_main_loop.cc:276] GLib: g_main_context_pop_thread_default: assertion 'stack != NULL' failed

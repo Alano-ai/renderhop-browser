@@ -1,0 +1,33 @@
+{
+  "name": "renderhop-browser",
+  "version": "0.1.0",
+  "description": "跃显浏览器 — independent GPU-selectable Chromium engine",
+  "main": "dist/src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node scripts/start.cjs",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "test:integration": "npm run build && node scripts/start.cjs --self-test",
+    "licenses": "node scripts/licenses.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alano-ai/renderhop-browser.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Alano-ai/renderhop-browser/issues"
+  },
+  "homepage": "https://github.com/Alano-ai/renderhop-browser#readme",
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "electron": "43.8.7",
+    "typescript": "7.0.2"
+  },
+  "license": "MIT",
+  "private": true
+}

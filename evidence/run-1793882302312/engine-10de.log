@@ -1,0 +1,6 @@
+Gtk-Message: 20:38:28.998: Failed to load module "appmenu-gtk-module"
+[60982:1105/203829.444165:ERROR:ui/gl/gl_surface_egl.cc:380] No suitable EGL configs found for initialization.
+[60982:1105/203829.448024:ERROR:ui/base/x/x11_software_bitmap_presenter.cc:147] XGetWindowAttributes failed for window 1
+[60982:1105/203829.458848:ERROR:gpu/command_buffer/service/gl_utils.cc:433] [.WebGL-0x366c0019fc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[60989:1105/203829.525208:ERROR:gpu/ipc/client/command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.
+[60938:1105/203831.049585:ERROR:content/browser/browser_main_loop.cc:276] GLib: g_main_context_pop_thread_default: assertion 'stack != NULL' failed

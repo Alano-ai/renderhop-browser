@@ -1,0 +1,38 @@
+{
+  "shellPid": 29614,
+  "windowId": 1,
+  "results": [
+    {
+      "name": "startup-real-webgl2",
+      "at": "2026-11-05T12:15:16.062Z",
+      "passed": false,
+      "phase": "无法启动网页引擎，请检查设备后恢复",
+      "error": "Error: Chromium 活动 GPU 的 PCI 标识与请求不一致: Google Inc. (Intel) / ANGLE (Intel, Mesa Intel(R) Graphics (ARL), OpenGL ES 3.2)",
+      "report": null,
+      "devices": [
+        {
+          "pciAddress": "0000:00:02.0",
+          "vendorId": "8086",
+          "deviceId": "7d51",
+          "name": "Intel Corporation Arrow Lake-P [Arc Pro 130T/140T] [8086:7d51] (rev 03)",
+          "driver": "i915",
+          "renderNode": "/dev/dri/renderD128",
+          "renderNodeAccessible": true,
+          "available": true,
+          "reason": "驱动和节点已发现，尚需 WebGL 渲染验证"
+        },
+        {
+          "pciAddress": "0000:02:00.0",
+          "vendorId": "10de",
+          "deviceId": "2204",
+          "name": "NVIDIA Corporation GA102 [GeForce RTX 3090] [10de:2204] (rev a1)",
+          "driver": "nvidia",
+          "renderNode": "/dev/dri/renderD129",
+          "renderNodeAccessible": true,
+          "available": true,
+          "reason": "驱动和节点已发现，尚需 WebGL 渲染验证"
+        }
+      ]
+    }
+  ]
+}

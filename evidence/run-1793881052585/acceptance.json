@@ -1,0 +1,301 @@
+{
+  "shellPid": 35096,
+  "windowId": 1,
+  "results": [
+    {
+      "name": "startup-real-webgl2",
+      "at": "2026-11-05T12:17:35.952Z",
+      "passed": true,
+      "phase": "已验证 · 切换会重新加载页面",
+      "error": "",
+      "report": {
+        "ok": true,
+        "reason": "WebGL 及 GPU 进程 drm-pdev/渲染计时匹配；Electron 活动设备元数据不一致，详见原始记录",
+        "actual": "Google Inc. (Intel) / ANGLE (Intel, Mesa Intel(R) Graphics (ARL), OpenGL ES 3.2)",
+        "report": {
+          "webgl2": true,
+          "vendor": "Google Inc. (Intel)",
+          "renderer": "ANGLE (Intel, Mesa Intel(R) Graphics (ARL), OpenGL ES 3.2)",
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "fps": 48,
+          "resolution": [
+            800,
+            360
+          ],
+          "pixel": [
+            53,
+            115,
+            168,
+            255
+          ],
+          "error": null,
+          "webgpu": {
+            "supported": false,
+            "reason": "未取得 WebGPU adapter"
+          },
+          "gpuInfo": {
+            "auxAttributes": {
+              "amdSwitchable": false,
+              "canSupportThreadedTextureMailbox": false,
+              "glImplementationParts": "(gl=none,angle=none)",
+              "glResetNotificationStrategy": 0,
+              "hardwareSupportsVulkan": false,
+              "inProcessGpu": true,
+              "initializationTime": 0,
+              "isAsan": false,
+              "isClangCoverage": false,
+              "jpegDecodeAcceleratorSupported": false,
+              "optimus": true,
+              "passthroughCmdDecoder": false,
+              "sandboxed": false,
+              "skiaBackendType": "None",
+              "subpixelFontRendering": true,
+              "targetCpuBits": 64,
+              "visibilityCallbackCallCount": 0
+            },
+            "gpuDevice": [
+              {
+                "active": true,
+                "deviceId": 8708,
+                "gpuPreference": 0,
+                "vendorId": 4318
+              },
+              {
+                "active": false,
+                "deviceId": 32081,
+                "gpuPreference": 0,
+                "vendorId": 32902
+              }
+            ]
+          },
+          "gpuInfoComplete": {
+            "auxAttributes": {
+              "amdSwitchable": false,
+              "canSupportThreadedTextureMailbox": false,
+              "glImplementationParts": "(gl=none,angle=none)",
+              "glResetNotificationStrategy": 0,
+              "hardwareSupportsVulkan": false,
+              "inProcessGpu": true,
+              "initializationTime": 0,
+              "isAsan": false,
+              "isClangCoverage": false,
+              "jpegDecodeAcceleratorSupported": false,
+              "optimus": true,
+              "passthroughCmdDecoder": false,
+              "sandboxed": false,
+              "skiaBackendType": "None",
+              "subpixelFontRendering": true,
+              "targetCpuBits": 64,
+              "visibilityCallbackCallCount": 0
+            },
+            "gpuDevice": [
+              {
+                "active": true,
+                "deviceId": 8708,
+                "gpuPreference": 0,
+                "vendorId": 4318
+              },
+              {
+                "active": false,
+                "deviceId": 32081,
+                "gpuPreference": 0,
+                "vendorId": 32902
+              }
+            ]
+          },
+          "featureStatus": {
+            "2d_canvas": "enabled",
+            "direct_rendering_display_compositor": "disabled_off_ok",
+            "gpu_compositing": "enabled",
+            "multiple_raster_threads": "enabled_on",
+            "opengl": "enabled_on",
+            "rasterization": "enabled",
+            "raw_draw": "disabled_off_ok",
+            "skia_graphite": "disabled_off",
+            "trees_in_viz": "disabled_off",
+            "video_decode": "enabled",
+            "video_encode": "disabled_software",
+            "vulkan": "disabled_off",
+            "webgl": "enabled",
+            "webgpu": "enabled",
+            "webgpu_on_vk_via_gl_interop": "enabled",
+            "webnn": "disabled_off"
+          },
+          "metrics": [
+            {
+              "cpu": {
+                "cumulativeCPUUsage": 1.15,
+                "percentCPUUsage": 0,
+                "idleWakeupsPerSecond": 0
+              },
+              "pid": 35198,
+              "type": "Browser",
+              "creationTime": 1793881052320,
+              "memory": {
+                "workingSetSize": 503056,
+                "peakWorkingSetSize": 503056
+              }
+            },
+            {
+              "cpu": {
+                "cumulativeCPUUsage": 0.82,
+                "percentCPUUsage": 0,
+                "idleWakeupsPerSecond": 0
+              },
+              "pid": 35259,
+              "type": "GPU",
+              "creationTime": 1793881052830,
+              "serviceName": "GPU",
+              "memory": {
+                "workingSetSize": 323644,
+                "peakWorkingSetSize": 323644
+              }
+            },
+            {
+              "cpu": {
+                "cumulativeCPUUsage": 0.13,
+                "percentCPUUsage": 0,
+                "idleWakeupsPerSecond": 0
+              },
+              "pid": 35264,
+              "type": "Utility",
+              "creationTime": 1793881052840,
+              "serviceName": "network.mojom.NetworkService",
+              "name": "Network Service",
+              "memory": {
+                "workingSetSize": 78128,
+                "peakWorkingSetSize": 78128
+              }
+            },
+            {
+              "cpu": {
+                "cumulativeCPUUsage": 0.35,
+                "percentCPUUsage": 0,
+                "idleWakeupsPerSecond": 0
+              },
+              "pid": 35269,
+              "type": "Tab",
+              "creationTime": 1793881052870,
+              "memory": {
+                "workingSetSize": 141280,
+                "peakWorkingSetSize": 141280
+              }
+            }
+          ],
+          "processDevices": [
+            {
+              "pid": 35259,
+              "fds": [
+                {
+                  "fd": "15",
+                  "path": "/dev/dri/renderD128",
+                  "info": "pos:\t0\nflags:\t0100002\nmnt_id:\t28\nino:\t468\ndrm-driver:\ti915\ndrm-client-id:\t213\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t82864 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t82864 KiB\ndrm-purgeable-system0:\t9604 KiB\ndrm-total-stolen-local0:\t0\ndrm-shared-stolen-local0:\t0\ndrm-active-stolen-local0:\t0\ndrm-resident-stolen-local0:\t0\ndrm-purgeable-stolen-local0:\t0\ndrm-engine-render:\t61468056 ns\ndrm-engine-copy:\t15340 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\ndrm-engine-compute:\t60008 ns\n"
+                },
+                {
+                  "fd": "16",
+                  "path": "/dev/dri/renderD128",
+                  "info": "pos:\t0\nflags:\t02100002\nmnt_id:\t28\nino:\t468\ndrm-driver:\ti915\ndrm-client-id:\t213\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t82864 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t82864 KiB\ndrm-purgeable-system0:\t9604 KiB\ndrm-total-stolen-local0:\t0\ndrm-shared-stolen-local0:\t0\ndrm-active-stolen-local0:\t0\ndrm-resident-stolen-local0:\t0\ndrm-purgeable-stolen-local0:\t0\ndrm-engine-render:\t61468056 ns\ndrm-engine-copy:\t15340 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\ndrm-engine-compute:\t60008 ns\n"
+                },
+                {
+                  "fd": "17",
+                  "path": "/dev/dri/renderD128",
+                  "info": "pos:\t0\nflags:\t02100002\nmnt_id:\t28\nino:\t468\ndrm-driver:\ti915\ndrm-client-id:\t213\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t82864 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t82864 KiB\ndrm-purgeable-system0:\t9604 KiB\ndrm-total-stolen-local0:\t0\ndrm-shared-stolen-local0:\t0\ndrm-active-stolen-local0:\t0\ndrm-resident-stolen-local0:\t0\ndrm-purgeable-stolen-local0:\t0\ndrm-engine-render:\t61468056 ns\ndrm-engine-copy:\t15340 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\ndrm-engine-compute:\t60008 ns\n"
+                },
+                {
+                  "fd": "18",
+                  "path": "/dev/dri/renderD128",
+                  "info": "pos:\t0\nflags:\t02100002\nmnt_id:\t28\nino:\t468\ndrm-driver:\ti915\ndrm-client-id:\t213\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t82864 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t82864 KiB\ndrm-purgeable-system0:\t9604 KiB\ndrm-total-stolen-local0:\t0\ndrm-shared-stolen-local0:\t0\ndrm-active-stolen-local0:\t0\ndrm-resident-stolen-local0:\t0\ndrm-purgeable-stolen-local0:\t0\ndrm-engine-render:\t61468056 ns\ndrm-engine-copy:\t15340 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\ndrm-engine-compute:\t60008 ns\n"
+                },
+                {
+                  "fd": "19",
+                  "path": "/dev/dri/renderD128",
+                  "info": "pos:\t0\nflags:\t02100002\nmnt_id:\t28\nino:\t468\ndrm-driver:\ti915\ndrm-client-id:\t213\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t82864 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t82864 KiB\ndrm-purgeable-system0:\t9604 KiB\ndrm-total-stolen-local0:\t0\ndrm-shared-stolen-local0:\t0\ndrm-active-stolen-local0:\t0\ndrm-resident-stolen-local0:\t0\ndrm-purgeable-stolen-local0:\t0\ndrm-engine-render:\t61468056 ns\ndrm-engine-copy:\t15340 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\ndrm-engine-compute:\t60008 ns\n"
+                },
+                {
+                  "fd": "20",
+                  "path": "/dev/dri/renderD128",
+                  "info": "pos:\t0\nflags:\t0100002\nmnt_id:\t28\nino:\t468\ndrm-driver:\ti915\ndrm-client-id:\t220\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t0\ndrm-shared-system0:\t0\ndrm-active-system0:\t0\ndrm-resident-system0:\t0\ndrm-purgeable-system0:\t0\ndrm-total-stolen-local0:\t0\ndrm-shared-stolen-local0:\t0\ndrm-active-stolen-local0:\t0\ndrm-resident-stolen-local0:\t0\ndrm-purgeable-stolen-local0:\t0\ndrm-engine-render:\t0 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\ndrm-engine-compute:\t0 ns\n"
+                }
+              ]
+            }
+          ]
+        },
+        "pciAddress": "0000:00:02.0"
+      },
+      "devices": [
+        {
+          "pciAddress": "0000:00:02.0",
+          "vendorId": "8086",
+          "deviceId": "7d51",
+          "name": "Intel Corporation Arrow Lake-P [Arc Pro 130T/140T] [8086:7d51] (rev 03)",
+          "driver": "i915",
+          "renderNode": "/dev/dri/renderD128",
+          "renderNodeAccessible": true,
+          "available": true,
+          "reason": "驱动和节点已发现，尚需 WebGL 渲染验证"
+        },
+        {
+          "pciAddress": "0000:02:00.0",
+          "vendorId": "10de",
+          "deviceId": "2204",
+          "name": "NVIDIA Corporation GA102 [GeForce RTX 3090] [10de:2204] (rev a1)",
+          "driver": "nvidia",
+          "renderNode": "/dev/dri/renderD129",
+          "renderNodeAccessible": true,
+          "available": true,
+          "reason": "驱动和节点已发现，尚需 WebGL 渲染验证"
+        }
+      ]
+    },
+    {
+      "name": "remote-page-isolation",
+      "at": "2026-11-05T12:17:37.899Z",
+      "passed": true,
+      "security": {
+        "require": "undefined",
+        "node": "undefined"
+      }
+    },
+    {
+      "name": "mouse-keyboard-chinese-commit",
+      "at": "2026-11-05T12:17:38.461Z",
+      "passed": true,
+      "text": "跃显中文测",
+      "inputStatus": "鼠标点击：1；输入事件：2；组合输入：0",
+      "limitation": "自动化测试 composition 提交链路；未人工操作系统输入法候选框"
+    },
+    {
+      "name": "wheel-forwarding",
+      "at": "2026-11-05T12:17:38.968Z",
+      "passed": true,
+      "scroll": 100,
+      "wheel": "滚轮事件：1；滚动位置：100"
+    },
+    {
+      "name": "tabs-navigation",
+      "at": "2026-11-05T12:17:45.565Z",
+      "passed": true,
+      "tabs": {
+        "tabs": [
+          {
+            "id": "8d573d19-c45d-4fa7-b672-11e13bd4d72a",
+            "url": "http://127.0.0.1:17838/probe.html",
+            "title": "RenderHop · 图形与输入测试",
+            "canGoBack": false,
+            "canGoForward": false,
+            "loading": false
+          },
+          {
+            "id": "47ebe5f9-8b4e-42e2-9d7a-f3cd13682ab0",
+            "url": "http://127.0.0.1:17838/second.html",
+            "title": "RenderHop · 图形与输入测试",
+            "canGoBack": true,
+            "canGoForward": false,
+            "loading": false
+          }
+        ],
+        "activeId": "47ebe5f9-8b4e-42e2-9d7a-f3cd13682ab0"
+      }
+    }
+  ]
+}

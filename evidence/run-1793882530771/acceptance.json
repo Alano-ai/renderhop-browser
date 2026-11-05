@@ -1,0 +1,38 @@
+{
+  "shellPid": 65925,
+  "windowId": 1,
+  "results": [
+    {
+      "name": "startup-real-webgl2",
+      "at": "2026-11-05T12:42:12.452Z",
+      "passed": false,
+      "phase": "无法启动网页引擎，请检查设备后恢复",
+      "error": "Error: TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Object'\n    |     property 'probeAttempts' -> object with constructor 'Array'\n    --- index 0 closes the circle",
+      "report": null,
+      "devices": [
+        {
+          "pciAddress": "0000:00:02.0",
+          "vendorId": "8086",
+          "deviceId": "7d51",
+          "name": "Intel Corporation Arrow Lake-P [Arc Pro 130T/140T] [8086:7d51] (rev 03)",
+          "driver": "i915",
+          "renderNode": "/dev/dri/renderD128",
+          "renderNodeAccessible": true,
+          "available": true,
+          "reason": "驱动和节点已发现，尚需 WebGL 渲染验证"
+        },
+        {
+          "pciAddress": "0000:02:00.0",
+          "vendorId": "10de",
+          "deviceId": "2204",
+          "name": "NVIDIA Corporation GA102 [GeForce RTX 3090] [10de:2204] (rev a1)",
+          "driver": "nvidia",
+          "renderNode": "/dev/dri/renderD129",
+          "renderNodeAccessible": true,
+          "available": true,
+          "reason": "驱动和节点已发现，尚需 WebGL 渲染验证"
+        }
+      ]
+    }
+  ]
+}

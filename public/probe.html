@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RenderHop · 图形与输入测试</title>
+  <style>
+    :root { color-scheme: light; font: 15px/1.5 system-ui, sans-serif; color: #14263b; background: #eef3f8; }
+    body { margin: 0; } main { max-width: 1120px; padding: 20px; margin: auto; }
+    h1 { font-size: 22px; margin: 0 0 4px; } p { margin: 5px 0 12px; color: #4b6076; }
+    .grid { display: grid; grid-template-columns: minmax(300px, 2fr) minmax(250px, 1fr); gap: 14px; }
+    section { background: white; border: 1px solid #d6e0e9; border-radius: 10px; padding: 14px; min-width: 0; }
+    h2 { margin: 0 0 10px; font-size: 16px; } canvas { display: block; width: 100%; height: 280px; background: #16263d; border-radius: 6px; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 10px 0 0; font-size: 12px; }
+    textarea { box-sizing: border-box; width: 100%; min-height: 75px; padding: 8px; font: inherit; }
+    button, a { font: inherit; } button { padding: 5px 10px; cursor: pointer; }
+    a { color: #0758a4; margin-right: 14px; } .scroll { overflow: auto; height: 88px; border: 1px solid #bac9d8; padding: 8px; }
+    .spacer { height: 180px; } .muted { color: #53697f; font-size: 13px; }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>RenderHop 图形与输入测试</h1>
+  <p>WebGL2 动画、图形设备、输入与持久化 Cookie 的本地测试页。</p>
+  <div class="grid">
+    <section>
+      <h2>WebGL2 动画</h2>
+      <canvas id="canvas" width="800" height="360" aria-label="WebGL2 动画"></canvas>
+      <pre id="graphics">正在检测……</pre>
+    </section>
+    <section>
+      <h2>输入与导航</h2>
+      <label for="input">在此输入中文或其他文字</label>
+      <textarea id="input" placeholder="输入法、键盘与粘贴测试"></textarea>
+      <p id="input-status" class="muted">鼠标点击：0；输入事件：0；组合输入：0</p>
+      <div id="scroll" class="scroll" tabindex="0">在此区域滚动滚轮<div class="spacer"></div>已滚到底部</div>
+      <p id="wheel-status" class="muted">滚轮事件：0；滚动位置：0</p>
+      <button id="cookie-set" type="button">设置持久化 Cookie</button>
+      <p id="cookie-status" class="muted"></p>
+      <button id="login-set" type="button">建立本地测试登录</button><p id="login-status" class="muted">登录状态检测中……</p>
+      <a href="/probe.html?tab=2">打开第二个测试地址</a><a href="/second.html">导航测试</a>
+    </section>
+  </div>
+</main>
+<script src="/probe.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.renderhop/
+*.log
+!evidence/run-*/*.log
+evidence/latest/

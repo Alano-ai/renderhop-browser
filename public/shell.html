@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; connect-src 'none'">
+<title>RenderHop · 跃显浏览器</title>
+<style>
+:root{font:14px system-ui,sans-serif;color:#202124;background:#dee3eb;color-scheme:light}*{box-sizing:border-box}body{margin:0;height:100vh;display:flex;flex-direction:column;overflow:hidden}button,input,select{font:inherit;color:inherit}button{cursor:pointer}button:disabled{opacity:.38;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #4d86e8;outline-offset:1px}button:hover:not(:disabled){background:#dce2ec}button:active:not(:disabled){background:#cdd6e3}[hidden]{display:none!important}
+#tabs{display:flex;align-items:end;gap:2px;padding:8px 10px 0;overflow-x:auto;overflow-y:hidden;min-height:43px;background:#dee3eb;scrollbar-width:thin}.tab{display:flex;align-items:center;flex:0 1 215px;min-width:100px;max-width:230px;height:35px;border-radius:10px 10px 0 0;background:transparent}.tab:hover{background:#cdd6e3}.tab.active{background:#fff}.tab button{min-width:0;height:30px;border:0;border-radius:50%;background:transparent;white-space:nowrap}.tab .name{flex:1;padding:0 8px 0 14px;border-radius:0;text-align:left;overflow:hidden;text-overflow:ellipsis}.tab button:last-child{width:28px;margin-right:4px;font-size:19px;line-height:1}#tabs>button{flex:none;width:30px;height:30px;margin:0 0 3px 3px;padding:0;border:0;border-radius:50%;background:transparent;font-size:22px;line-height:1}
+#toolbar{position:relative;display:flex;align-items:center;gap:4px;min-height:53px;padding:6px 12px;background:#fff}.icon{display:inline-grid;place-items:center;flex:none;width:36px;height:36px;padding:0;border:0;border-radius:50%;background:transparent;font-size:20px;line-height:1}.address-wrap{display:flex;align-items:center;flex:1;min-width:70px;height:38px;margin:0 5px;border-radius:22px;background:#f1f3f4}.address-wrap:focus-within{background:#fff;box-shadow:0 1px 5px #5f636855,0 0 0 2px #a8c7fa}.address-mark{padding-left:14px;color:#5f6368;font-size:14px}#address{flex:1;min-width:0;height:100%;padding:0 9px;border:0;outline:0;background:transparent}#bookmark{font-size:21px;color:#5f6368}#bookmark.active{color:#1a73e8}#menu{font-size:23px}
+#chrome-menu{position:absolute;z-index:8;right:12px;top:49px;width:240px;padding:7px 0;border:1px solid #d9dfe7;border-radius:10px;background:white;box-shadow:0 8px 24px #20212435}.menu-item{display:block;width:100%;padding:9px 16px;border:0;background:transparent;text-align:left}.zoom-row{display:flex;align-items:center;gap:3px;padding:4px 12px;border-top:1px solid #e7ebef}.zoom-row span{flex:1}.zoom-row button{min-width:33px;height:32px;border:0;border-radius:5px;background:transparent}
+#status{display:flex;align-items:center;gap:8px;min-height:39px;padding:4px 12px;background:#f8f9fa;border-top:1px solid #e6e9ed;border-bottom:1px solid #dfe3e8;font-size:12px}#phase{white-space:nowrap;color:#196548}#detail{flex:1;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#44515f}#gpu{max-width:280px;min-width:110px;height:29px;padding:3px 7px;border:1px solid #cbd3dd;border-radius:6px;background:white}#status button{height:29px;padding:3px 9px;border:1px solid #cbd3dd;border-radius:6px;background:white}#status button:hover:not(:disabled){background:#e8edf4}#error{display:none;padding:8px 14px;color:#8b3010;background:#fff1e8;white-space:pre-wrap;max-height:100px;overflow:auto}#viewport{position:relative;flex:1;min-height:100px;overflow:hidden;background:#fff}#frame{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;user-select:none;pointer-events:none}#input{position:absolute;z-index:2;width:2px;height:22px;opacity:.02;resize:none;border:0;padding:0;outline:0;overflow:hidden}#overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#f5f8fcee;color:#44515f;font-size:17px;text-align:center;white-space:pre-wrap;z-index:3;pointer-events:none}#footer{font-size:11px;color:#697681;padding:4px 14px;background:#f8f9fa;border-top:1px solid #e6e9ed}
+#findbar{position:absolute;z-index:6;right:20px;top:0;display:flex;align-items:center;gap:4px;padding:7px;background:#fff;border:1px solid #d7dee7;border-radius:0 0 8px 8px;box-shadow:0 4px 12px #20212433}#find-text{width:200px;padding:6px;border:1px solid #cbd3dd;border-radius:5px}#findbar button{width:29px;height:29px;border:0;border-radius:50%;background:transparent}#find-result{min-width:50px;color:#697681;font-size:12px}
+dialog{width:min(800px,90vw);max-height:80vh;overflow:auto;padding:20px;background:#fff;color:#202124;border:1px solid #d5dce5;border-radius:12px;box-shadow:0 10px 30px #20212440}dialog::backdrop{background:#20212455}dialog button{padding:7px 12px;border:1px solid #cbd3dd;border-radius:6px;background:#fff}.dialog-heading{display:flex;align-items:center;gap:12px;margin-bottom:14px}.dialog-heading h2{flex:1;margin:0;font-size:19px}#panel-search{width:100%;padding:9px 11px;border:1px solid #cbd3dd;border-radius:7px}#panel-list{margin-top:12px;overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}
+@media(max-width:750px){#status{flex-wrap:wrap}#detail{flex-basis:45%}#gpu{flex:1;max-width:none}#footer{display:none}}
+</style>
+<style>.library-row{display:flex;gap:8px;align-items:center;border-bottom:1px solid #edf0f4;padding:5px 0}.library-open{flex:1;min-width:0;text-align:left;border:0!important}.library-open strong,.library-open small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.library-open small{font-size:12px;color:#64748b;margin-top:3px}#phase{max-width:240px;overflow:hidden;text-overflow:ellipsis}</style>
+</head>
+<body>
+<div id="tabs" aria-label="标签页"></div>
+<form id="toolbar" role="navigation" aria-label="浏览器工具栏">
+  <button type="button" class="icon" id="back" aria-label="后退" title="后退 Alt+←">←</button>
+  <button type="button" class="icon" id="forward" aria-label="前进" title="前进 Alt+→">→</button>
+  <button type="button" class="icon" id="reload" aria-label="刷新" title="刷新 Ctrl+R">↻</button>
+  <div class="address-wrap"><span class="address-mark" aria-hidden="true">⌕</span><input id="address" aria-label="地址栏" placeholder="输入网址或搜索 · Ctrl+L" autocomplete="off"><button type="button" class="icon" id="bookmark" aria-label="收藏当前页面" title="收藏当前页面">☆</button></div>
+  <button type="button" class="icon" id="menu" aria-label="打开菜单" aria-haspopup="true" aria-expanded="false" title="菜单">⋮</button>
+  <div id="chrome-menu" hidden>
+    <button type="button" class="menu-item" data-action="new">新建标签页</button>
+    <button type="button" class="menu-item" data-action="bookmarks">书签</button>
+    <button type="button" class="menu-item" data-action="history">历史记录</button>
+    <button type="button" class="menu-item" data-action="find">查找</button>
+    <div class="zoom-row"><span>缩放</span><button type="button" id="zoom-out" aria-label="缩小">−</button><button type="button" id="zoom-reset" title="重置缩放">100%</button><button type="button" id="zoom-in" aria-label="放大">+</button></div>
+  </div>
+</form>
+<div id="status" aria-live="polite">
+  <strong id="phase">正在启动</strong><span id="detail"></span>
+  <select id="gpu" aria-label="网页渲染显卡"></select>
+  <button type="button" id="discover" title="重新检测硬件（仍需渲染验证）">检测</button>
+  <button type="button" id="recover">恢复</button>
+  <button type="button" id="info">设备信息</button>
+</div>
+<div id="error" role="alert"></div>
+<div id="viewport">
+  <img id="frame" alt="网页引擎画面" draggable="false">
+  <textarea id="input" aria-label="网页中文输入通道" autocomplete="off" spellcheck="false"></textarea>
+  <div id="overlay">正在启动独立网页引擎……</div>
+  <div id="findbar" hidden><input id="find-text" aria-label="查找页面内容" placeholder="查找"><span id="find-result"></span><button type="button" id="find-prev" aria-label="上一个">↑</button><button type="button" id="find-next" aria-label="下一个">↓</button><button type="button" id="find-close" aria-label="关闭查找">×</button></div>
+</div>
+<div id="footer">切换会重新加载页面。网页画面经位图回读传输；外壳合成与视频解码单独报告。</div>
+<dialog id="panel"><div class="dialog-heading"><h2 id="panel-title"></h2><button type="button" id="panel-close">关闭</button></div><input id="panel-search" type="search" placeholder="搜索" aria-label="搜索"><div id="panel-list"></div></dialog>
+<dialog id="diagnostics"><button type="button" id="close-info">关闭</button><pre id="report"></pre></dialog>
+<script src="shell.js"></script>
+</body>
+</html>
